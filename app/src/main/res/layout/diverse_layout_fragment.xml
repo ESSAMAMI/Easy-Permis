@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Card 1"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/crushed"
+            android:textSize="55dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Card 3"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/crushed"
+            android:textSize="55dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Card 4"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/crushed"
+            android:textSize="55dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Card 5"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/crushed"
+            android:textSize="55dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

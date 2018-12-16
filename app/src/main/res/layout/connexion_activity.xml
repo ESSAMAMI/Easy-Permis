@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_overlay">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slideViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fabric"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alert"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/crushed"
+            android:text="  L'email et ou le mot de passe est faux"
+            android:textSize="12dp"
+            android:drawableLeft="@drawable/ic_error_black_24dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="25dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crushed"
+            android:hint="E-mail"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#151f39"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:id="@+id/mdp"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:fontFamily="@font/crushed"
+            android:textColorHint="#151f39"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:onClick="show"
+            android:layout_marginTop="25dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crushed"
+            android:text="Se connecter"
+            android:background="@drawable/button_layer"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btnForgeten"
+            android:layout_marginTop="15dp"
+            android:layout_width="170dp"
+            android:fontFamily="@font/crushed"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transparent"
+            android:text="Mot de passe oublié ?"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+</LinearLayout>

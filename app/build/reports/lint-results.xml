@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.1.2">
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;12dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="44"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="54"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="http://developer.android.com/training/multiscreen/screendensities.html"
+        urls="http://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="65"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="On SDK version 23 and up, your app data will be automatically backed up and restored on app install. Consider adding the attribute `android:fullBackupContent` to specify an `@xml` resource which configures which files to backup. More info: https://developer.android.com/training/backup/autosyncapi.html"
+        category="Security"
+        priority="3"
+        summary="AllowBackup/FullBackupContent Problems"
+        explanation="The `allowBackup` attribute determines if an application&apos;s data can be backed up and restored. It is documented at http://developer.android.com/reference/android/R.attr.html#allowBackup&#xA;&#xA;By default, this flag is set to `true`. When this flag is set to `true`, application data can be backed up and restored by the user using `adb backup` and `adb restore`.&#xA;&#xA;This may have security consequences for an application. `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.&#xA;&#xA;Setting `allowBackup=&quot;false&quot;` opts an application out of both backup and restore.&#xA;&#xA;To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`.&#xA;&#xA;If not set to false, and if targeting API 23 or later, lint will also warn that you should set `android:fullBackupContent` to configure auto backup."
+        url="https://developer.android.com/training/backup/autosyncapi.html"
+        urls="https://developer.android.com/training/backup/autosyncapi.html,http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\AndroidManifest.xml"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `#ffffff` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;#ffffff&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\ic_launcher_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_launcher_foreground` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable-v24\ic_launcher_foreground.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_lock_black_24dp` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector android:height=&quot;24dp&quot; android:tint=&quot;#151f39&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\ic_lock_black_24dp.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.logo_g` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\logo_g.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.wg100` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\wg100.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/bg.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\bg.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/bg_overlay.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\bg_overlay.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/coding.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\coding.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/drink.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\drink.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/eat.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\eat.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/fabric.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\fabric.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/logo.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\logo.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/logo_g.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\logo_g.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/wg100.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\wg100.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        severity="Warning"
+        message="The following unrelated icon files have identical contents: logo.png, logo_g.png"
+        category="Usability:Icons"
+        priority="3"
+        summary="Duplicated icons under different names"
+        explanation="If an icon is repeated under different names, you can consolidate and just use one of the icons and delete the others to make your application smaller. However, duplicated icons usually are not intentional and can sometimes point to icons that were accidentally overwritten or accidentally not updated.">
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\logo_g.png"/>
+        <location
+            file="E:\easyPermis\app\src\main\res\drawable\logo.png"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        severity="Warning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        category="Usability"
+        priority="5"
+        summary="Missing support for Firebase App Indexing"
+        explanation="Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search."
+        url="https://g.co/AppIndexing/AndroidStudio"
+        urls="https://g.co/AppIndexing/AndroidStudio"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\AndroidManifest.xml"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). &#xA;&#xA;The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.&#xA;&#xA;If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        &lt;EditText"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="48"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\activity_main.xml"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\slide_layout.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;  L&apos;email et ou le mot de passe est faux&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;  L&apos;email et ou le mot de passe est faux&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot; E-mail&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:hint=&quot; E-mail&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="51"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot; Mot de passe&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:hint=&quot; Mot de passe&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="62"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Se connecter&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Se connecter&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="74"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;HEADING&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;HEADING&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\slide_layout.xml"
+            line="23"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis enim a condimentum tempus. Mauris in ante mattis, finibus nulla sit amet&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis enim a condimentum tempus. Mauris in ante mattis, finibus nulla sit amet&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\slide_layout.xml"
+            line="35"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:drawableLeft` with `android:drawableStart=&quot;@drawable/ic_error_black_24dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:drawableLeft=&quot;@drawable/ic_error_black_24dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:drawableLeft` with `android:drawableStart=&quot;@drawable/ic_email_black_24dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:drawableLeft=&quot;@drawable/ic_email_black_24dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:drawableLeft` with `android:drawableStart=&quot;@drawable/ic_vpn_key_black_24dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:drawableLeft=&quot;@drawable/ic_vpn_key_black_24dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="66"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:drawableRight` with `android:drawableEnd=&quot;@drawable/ic_send_black_24dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:drawableRight=&quot;@drawable/ic_send_black_24dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="E:\easyPermis\app\src\main\res\layout\connexion_activity.xml"
+            line="75"
+            column="13"/>
+    </issue>
+
+</issues>

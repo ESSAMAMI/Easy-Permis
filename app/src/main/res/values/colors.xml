@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151f39</color>
+    <color name="colorPrimaryDark">#629a9c</color>
+    <color name="colorAccent">#629a9c</color>
+    <color name="colorSlideAfter">#81CED0</color>
+</resources>

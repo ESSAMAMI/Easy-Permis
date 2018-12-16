@@ -1,0 +1,148 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\93baa79a57af092132bbd4271d2a2646\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3601d22cd7269c48e37534f0ba457b64\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\6f3ed90bfa4c7ea34f4f564c52136b64\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\ee66098fa369e5416faf1d05c27fb6ee\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f1ce4a97a81d335cf85892965f308b9c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\f80d581eba25beb6b5f830a6a2402f67\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\b02514938f0c8267bcb9d05aff885d82\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\cd0e1e19c14f63efabab9bd26a227617\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\6e3ce94e6e0b00e7fa1cf2fad48d3925\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\f7eb43ef0d046f8f7cc9194b4806b206\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\7fa744298fe3955d318b80de2ea25d37\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\71b3361d97aa670bc24aaf3b85d54d6a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\40c5a59d57490a6be3e9d574171b4d4f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e90964f16a483bc3b0796de614ecae71\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4a6eaeb3add3f3f86972ce5c4f7b117e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c6feceb51a0c8dc5a1f632cc276ffd86\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\90d00017243790d8049273f5d82529a6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9a2c0329dcc6929cf76b7a72ce0760a1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d29153560b0324b87846811a74ee6263\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:4:5-78
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.INTERNET
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:6:5-25:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f1ce4a97a81d335cf85892965f308b9c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f1ce4a97a81d335cf85892965f308b9c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\f80d581eba25beb6b5f830a6a2402f67\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\f80d581eba25beb6b5f830a6a2402f67\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:9:9-41
+	android:roundIcon
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:10:9-54
+	android:icon
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:12:9-40
+activity#fr.easypermis.MainActivity
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:13:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:17:27-74
+activity#fr.easypermis.vue.ConnexionActivity
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:20:9-68
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:20:19-56
+activity#fr.easypermis.vue.HomeActivity
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:21:9-63
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:21:19-51
+meta-data#preloaded_fonts
+ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:22:9-24:57
+	android:resource
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:24:13-54
+	android:name
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml:23:13-43
+uses-sdk
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\93baa79a57af092132bbd4271d2a2646\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\93baa79a57af092132bbd4271d2a2646\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3601d22cd7269c48e37534f0ba457b64\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3601d22cd7269c48e37534f0ba457b64\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\6f3ed90bfa4c7ea34f4f564c52136b64\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\6f3ed90bfa4c7ea34f4f564c52136b64\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\ee66098fa369e5416faf1d05c27fb6ee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\ee66098fa369e5416faf1d05c27fb6ee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f1ce4a97a81d335cf85892965f308b9c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f1ce4a97a81d335cf85892965f308b9c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\f80d581eba25beb6b5f830a6a2402f67\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\f80d581eba25beb6b5f830a6a2402f67\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\b02514938f0c8267bcb9d05aff885d82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\b02514938f0c8267bcb9d05aff885d82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\cd0e1e19c14f63efabab9bd26a227617\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\cd0e1e19c14f63efabab9bd26a227617\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\6e3ce94e6e0b00e7fa1cf2fad48d3925\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\6e3ce94e6e0b00e7fa1cf2fad48d3925\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\f7eb43ef0d046f8f7cc9194b4806b206\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\f7eb43ef0d046f8f7cc9194b4806b206\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\7fa744298fe3955d318b80de2ea25d37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\7fa744298fe3955d318b80de2ea25d37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\71b3361d97aa670bc24aaf3b85d54d6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\71b3361d97aa670bc24aaf3b85d54d6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\40c5a59d57490a6be3e9d574171b4d4f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\40c5a59d57490a6be3e9d574171b4d4f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e90964f16a483bc3b0796de614ecae71\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e90964f16a483bc3b0796de614ecae71\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4a6eaeb3add3f3f86972ce5c4f7b117e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4a6eaeb3add3f3f86972ce5c4f7b117e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c6feceb51a0c8dc5a1f632cc276ffd86\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c6feceb51a0c8dc5a1f632cc276ffd86\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\90d00017243790d8049273f5d82529a6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\90d00017243790d8049273f5d82529a6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9a2c0329dcc6929cf76b7a72ce0760a1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9a2c0329dcc6929cf76b7a72ce0760a1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d29153560b0324b87846811a74ee6263\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Electro Depot\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d29153560b0324b87846811a74ee6263\AndroidManifest.xml:20:5-44
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		ADDED from E:\easyPermis\app\src\main\AndroidManifest.xml
+		INJECTED from E:\easyPermis\app\src\main\AndroidManifest.xml
